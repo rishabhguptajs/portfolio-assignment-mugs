@@ -15,16 +15,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 }) => {
   return (
     <div className="flex flex-col overflow-hidden">
-      <div className="bg-[#FFEBDB] flex flex-row px-8 rounded-lg">
+      <div className="bg-[#FFEBDB] rounded-lg">
         <img
           src={imageSrc1}
           alt={`${title} - Background`}
-          className=" w-[50%] h-60 z-20 shadow-md"
-        />
-        <img
-          src={imageSrc2}
-          alt={`${title} - Foreground`}
-          className="w-32 h-32 rounded-md shadow-md "
+          className="w-[80%] h-72 object-cover mx-auto"
         />
       </div>
       <div className="mt-4">

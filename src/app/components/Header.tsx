@@ -42,7 +42,7 @@ const Header = () => {
           <Link href="#contact">Contact</Link>
         </li>
         <li className="bg-[#FD6F00] text-white px-4 py-2 rounded-full hover:bg-[#e65b00]">
-          <Link href="/cv">Download CV</Link>
+          <Link href="/cv" className="text-white">Download CV</Link>
         </li>
       </ul>
 
@@ -86,7 +86,7 @@ const Header = () => {
       <ul
         className={`${
           isMenuOpen ? "flex" : "hidden"
-        } flex-col items-center absolute top-16 left-0 right-0 bg-white space-y-4 py-4 md:hidden`}
+        } flex-col items-center absolute top-16 left-0 right-0 bg-white space-y-4 py-4 md:hidden z-50`}
       >
         <li className="hover:text-[#FD6F00]">
           <Link href="#home">Home</Link>
@@ -107,7 +107,7 @@ const Header = () => {
           <Link href="#contact">Contact</Link>
         </li>
         <li className="bg-[#FD6F00] text-white px-4 py-2 rounded-full hover:bg-[#e65b00]">
-          <Link href="/cv">Download CV</Link>
+          <Link href="/cv" className="text-white">Download CV</Link>
         </li>
       </ul>
     </nav>

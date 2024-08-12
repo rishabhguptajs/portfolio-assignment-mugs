@@ -7,7 +7,7 @@ import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/f
 
 const HeroSection = () => {
   return (
-    <div className="relative flex flex-col md:flex-row items-center justify-between h-screen px-20 py-16 bg-white">
+    <div className="relative flex flex-col md:flex-row items-center justify-between h-screen px-20 py-16 bg-white mx-20">
       <div className="max-w-lg md:w-1/2 text-left">
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-gray-800">
           Hi, I am
