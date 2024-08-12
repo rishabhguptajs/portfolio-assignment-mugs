@@ -2,32 +2,91 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Custom Font Styles */
+.custom-font {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 58.51px;
+  text-align: left;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.custom-font-2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 58.51px;
+  text-align: left;
+}
+
+.custom-font-3 {
+  font-family: 'Corvetta Personal Use', serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 65.59px;
+  text-align: center;
+}
+
+/* Responsive Navbar Styles */
+nav {
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333333;
+}
+
+nav ul li:hover {
+  color: #FD6F00;
+}
+
+.custom-font-3 {
+  background-color: #FD6F00;
+  color: #ffffff;
+  border-radius: 100%;
+  width: 67px;
+  height: 67px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Responsive Styles for Navbar */
+#mobile-menu.hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  #mobile-menu {
+    display: none;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+@media (max-width: 767px) {
+  #mobile-menu {
+    display: flex;
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+/* Additional styles for responsiveness */
+#menu-toggle {
+  transition: transform 0.3s ease;
+}
+
+#menu-toggle.active svg {
+  transform: rotate(90deg);
 }
